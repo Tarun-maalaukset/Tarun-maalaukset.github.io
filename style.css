@@ -21,6 +21,16 @@ h2 {
     margin: 0;
 }
 
+.photo-gallery-header {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper {
+    width: 100%;
+}
+
 .photo-gallery {
     display: flex;
     justify-content: space-between;
@@ -29,28 +39,18 @@ h2 {
     align-content: center;
 }
 
-@media only screen and (min-width: 700px) {
+
+@media only screen and (min-width: 600px) {
     /* For tablets: */
     .photo-gallery {
         display: flex;
         justify-content: space-evenly;
-        flex-wrap: wrap;
         flex-direction: row;
         align-content: center;
     }
 
     .photo {
-        flex-basis: 45%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-    }
-
-    .photo-gallery-header {
-        display: block;
-        width: 100%;
-        text-align: center;
+        flex-basis: 40%;
     }
 
     .sidebar h2, .sidebar p {
@@ -220,11 +220,6 @@ h3 {
     float: right;
 }
 
-.wrapper {
-    margin: auto;
-    max-width: 75rem;
-}
-
 .photo-gallery-header {
     font-size: 61px;
 }
@@ -272,16 +267,9 @@ a:hover {
 
 img { 
     max-width: 100%;
-    max-height: 100%;
 }
 
-.photo {
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    width: 75%;
-    text-align: center;
-    margin-bottom: 50px;
-    background-color: white;
-}
+
 
 h2 {
     text-align: center;
