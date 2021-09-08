@@ -1,4 +1,4 @@
-*, *:after, *:before {
+* {
 	box-sizing: border-box;
 }
 
@@ -12,45 +12,37 @@ body {
     background-color: #f5f5f5;
 }
 
-
-ul {
-    margin: 0;
-}
-
-h2 {
-    margin: 0;
-}
-
-.photo-gallery-header {
+.header {
     display: block;
     width: 100%;
     text-align: center;
+    font-size: 61px;
 }
 
-.wrapper {
-    width: 100%;
-}
-
-.photo-gallery {
+.flex-container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     flex-direction: column;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
+.flex-item {
+    width: 75%;
+    padding: 10px;
+    margin: 10px;
+}
 
 @media only screen and (min-width: 600px) {
     /* For tablets: */
-    .photo-gallery {
-        display: flex;
-        justify-content: space-evenly;
+    .flex-container {
+        flex-wrap: wrap;
         flex-direction: row;
-        align-content: center;
+        justify-content: space-around;
     }
 
-    .photo {
-        flex-basis: 40%;
+    .flex-item {
+        flex-basis: 45%;
     }
 
     .sidebar h2, .sidebar p {
@@ -74,21 +66,15 @@ h2 {
         margin-right: 20px;
         font-size: 10px;
     }
-
 }
 
-@media  screen (min-width: 100px) and (max-width: 500px) {
-    .photo {
-        flex-basis {
-            60%;
-        }
-    }
-}
-
-
-@media  screen and (min-width: 900px) {
+@media  only screen and (min-width: 900px) {
     /* For desktop: */
-    .photo {
+    .flex-container {
+        flex-direction: row;
+    }
+
+    .flex-item {
         flex-basis: 30%;
     }
 
@@ -96,18 +82,7 @@ h2 {
         overflow: hidden;
         float: left;
     }
-
 }
-
-@media only screen and (min-width: 1200px) {
-    /*Big screens*/
-    .photo {
-    flex-basis: 23%;
-    }
-
-}
-
-
 
 .copyrights {
     text-align: center;
@@ -115,15 +90,11 @@ h2 {
     color: white;
 }
 
-
-
 .color-black {
     color: black;
 }
 
 form {
-    margin: 20px;
-    padding: 20px;
     text-align: center;
 }
 
@@ -201,27 +172,22 @@ input.submit-form:hover {
 h3 {
     text-align: center;
     font-size: 50px;
+    margin-bottom: 15px;
+    margin-top: 20px;
 }
 
 .center-text {
     text-align: center;
 }
 
-
-
-
 .sidebar img {
     width: 180px;
     padding: 12px;
-    margin-left: 20px;
+    margin: 25px;
     border-radius: 0 50% 0 50%;
     box-shadow: 11px 10px 6px inset white;
     background-color: #b4b4b4;
-    float: right;
-}
-
-.photo-gallery-header {
-    font-size: 61px;
+    float: left;
 }
 
 .header-background {
@@ -230,6 +196,7 @@ h3 {
     background-repeat: no-repeat;
     background-position: center center;
     height: 270px;
+    margin-top: -5px;
 }
 
 .navbar {
@@ -254,6 +221,7 @@ h3 {
 
 ul {
     list-style-type: none;
+    margin: 0;
 }
 
 a {
@@ -267,6 +235,7 @@ a:hover {
 
 img { 
     max-width: 100%;
+    max-height: 100%;
 }
 
 
@@ -276,6 +245,23 @@ h2 {
     padding-top: 20px;
     margin-bottom: 20px;
     font-size: 37px;
+}
+.sidebar {
+    width: 100%;
+    text-align: left;
+    color: white;
+    background-color: #111;
+    padding: 50px;
+}
+
+.sidebar h2 {
+    font-size: 3em;
+    margin: 5px;
+}
+
+.sidebar p {
+    font-size: 1.7em;
+    margin: 10px;
 }
 
 .arrow-up {
@@ -291,29 +277,9 @@ h2 {
     background-color: #00ff00;
 }
 
-.sidebar {
-    width: 100%;
-    text-align: left;
-    height: auto;
-    color: white;
-    background-color: #111;
-    padding: 50px;
-}
-
-.sidebar h2 {
-    font-size: 3em;
-    text-align: left;
-    margin-top: 0;
-}
-
-.sidebar p {
-    text-align: left;
-    font-size: 1.8em;
-}
-
 footer {
     background: rgb(31, 31, 31);
-    height: 250px;
+    height: 140px;
     padding: 25px;
     color: rgb(255, 255, 255);
     text-align: left;
@@ -321,10 +287,12 @@ footer {
 
 footer div h4 {
     font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 footer div a {
-    margin: 15px;
+    margin: 25px;
     font-size: 16px;
     background-color: #111;
     color: white;
