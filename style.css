@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+    /*border: 1px solid red !important;*/
 }
 
 html {
@@ -10,18 +11,24 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #f5f5f5;
+    overflow-x: hidden;
 }
 
 .header {
     display: block;
-    width: 100%;
     text-align: center;
-    font-size: 69px;
+    font-size: 35px;
 }
 
 .hidden {
     display: none;
 }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 .sidebar-desktop {
     display: none;
@@ -48,6 +55,16 @@ body {
 .flex-item {
     padding: 10px;
     margin: 10px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    background-color: #111;
 }
 
 .navbar a {
@@ -97,6 +114,8 @@ body {
     height: 150px;
 }
 
+
+
 /* Add Animation */
 .modal-content, #caption {
     animation-name: zoom;
@@ -130,7 +149,7 @@ body {
 }
 
 /* 100% Image Width on Smaller Screens*/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     .modal-content {
         width: 90%;
     }
@@ -229,30 +248,16 @@ h3 {
     text-align: center;
 }
 
-.sidebar img {
-    width: 180px;
-    padding: 12px;
-    margin: 25px;
-    border-radius: 0 50% 0 50%;
-    box-shadow: 11px 10px 6px inset white;
-    background-color: #b4b4b4;
-}
-
 .header-background {
     background-size: cover;
     background-image: url("background.pic-3.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    height: 270px;
+    height: 225px;
     margin-top: -5px;
 }
 
-.navbar {
-    list-style-type: none;
-    padding: 0;
-    width: 100%;
-    background-color: #111;
-}
+
 
 
 ul {
@@ -282,23 +287,33 @@ h2 {
 }
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
-    width: 100%;
-    height: auto;
     text-align: left;
     color: white;
     background-color: #111;
-    padding: 50px;
+    padding: 20px;
 }
 
 .sidebar h2 {
-    font-size: 3em;
+    font-size: 40px;
     margin: 5px;
 }
 
 .sidebar p {
-    font-size: 1.7em;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.sidebar img {
+    align-self: center;
+    width: 140px;
+    padding: 10px;
     margin: 10px;
+    border-radius: 0 50% 0 50%;
+    box-shadow: 11px 10px 6px inset white;
+    background-color: #b4b4b4;
 }
 
 .arrow-up {
@@ -344,7 +359,9 @@ h2 {
 }
 
 
-@media only screen and (min-width: 700px) {
+
+
+@media only screen and (min-width: 600px) {
     /* For tablets: */
     .flex-container {
         display: flex;
@@ -376,7 +393,6 @@ h2 {
     }
 
     div.navbar li {
-        overflow: hidden;
         float: right;
     }
 
@@ -395,13 +411,10 @@ h2 {
 
     .sidebar {
         padding: 15px;
-        height: 275px;
     }
 
     .sidebar img {
         width: 130px;
-        display: inline;
-        float: left;
         margin: 20px;
     }
 
@@ -419,7 +432,7 @@ h2 {
 
 }
 
-@media  only screen and (min-width: 900px) {
+@media  only screen and (min-width: 760px) {
     /* For desktop: */
     .flex-container {
         display: flex;
