@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ota yhteyttä</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar clearfix">
+        <ul>
+            <li>
+                <a href="index.html">
+                Home</a>
+            </li>
+            <li>
+                <a href="index.html#photos">
+                Kuvat</a>
+            </li> 
+        </ul>
+    </div>
+
+    <div class="header-container">
+        <div  class="header-background">
+
+        <form action="connect.php" method="POST" class="contact-form" onsubmit="return false">
+            <a id="contact"></a>
+            <h3>Ota Yhteyttä</h3>
+            <input type="text" placeholder="Nimi" id="name" name="name" />
+            <br><br>
+            <input type="email" placeholder="Sähköposti" id="email" name="email" />
+            <br><br>
+            <input type="text" placeholder="Puhelin numero" id="phone_number" name="phone_number" />
+            <br><br>
+            <textarea id="message" rows="4" name="message"></textarea>
+            <br><br>
+            <input type="submit" class="submit-my-form">
+        </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contact-email">
+            <h4>This website is created by Joonatan Karhu</h4>
+            <p>If you are interested in buying a website, contact me down below</p>
+            <a href="mailto:joonatan.karhu@outlook.com" target="_blank">Contact</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
