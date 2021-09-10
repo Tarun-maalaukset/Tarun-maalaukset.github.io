@@ -257,8 +257,12 @@ label {
     color: #031305e6;
     box-shadow: none;
     cursor: pointer;
+    border: none;
 }
 
+.submit-my-form:hover {
+    color: rgb(17, 199, 0);
+}
 
 input.submit-form {
     background-color: rgb(0 189 25);
