@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarun Maalauksia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.png" type="image/jpg">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -17,22 +20,29 @@
         </div>
     <div class="navbar clearfix">
         <ul>
+            <li class="hidden">
+                <a href="index.html">
+                Home</a>
+            </li>   
+            <li>
+                <a href="#photos">
+                Kuvat</a>
+            </li> 
             <li>
                 <a href="#contact">
                 Ota Yhteyttä</a>
             </li>
-            <li>
-                <a href="#photos">
-                Kuvat</a>
-            </li>
-            <li class="hidden">
-                <a href="index.html">
-                Home</a>
-            </li>    
         </ul>
+    </div>
+
+    <div class="header-container">
+        <div  class="header-background">
+            <h2>Tarun Maalauksia</h2>
+            <p>Minä teen tilaustyönä muotokuvia,<br> eläinaiheisia ja lapsiaiheisia maalauksia</p>
+            <div class="contact-button"><a href="#contact">Ota yhteyttä</a> </div>
         </div>
-    <div class="header-background"></div>
-        </div>
+    </div>
+
     <aside class="sidebar clearfix">
         <h2>Kuka minä olen?</h2>
         <img src="taru.jpg" alt="picture of me">
@@ -40,7 +50,6 @@
         Enimmäkseen maalailen öljyväreillä mutta myös piirtäminen on mieluisaa.</p>
     </aside>
     <a id="photos"></a>
-    <h2 class="header">Maalaukset</h2>
 
     <div class="flex-container">
 
@@ -115,7 +124,7 @@
         </div> 
     </div>
 
-
+    <!--
     <form action="connect.php" method="POST" class="contact-form" onsubmit="return false">
         <a id="contact"></a>
         <h3>Ota Yhteyttä</h3>
@@ -128,7 +137,7 @@
         <textarea id="message" rows="4" name="message"></textarea>
         <br><br>
         <input type="submit" class="submit-my-form">
-    </form>
+    </form>-->
 
     <footer>
         <div class="contact-email">
