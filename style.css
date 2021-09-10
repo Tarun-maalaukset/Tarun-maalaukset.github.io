@@ -1,3 +1,11 @@
+/*
+    Notes
+
+    navigation background color: rgb(255, 255, 255);
+    
+*/
+
+
 * {
 	box-sizing: border-box;
     /*border: 1px solid red !important;*/
@@ -9,15 +17,9 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #080808;
     overflow-x: hidden;
-}
-
-.header {
-    display: block;
-    text-align: center;
-    font-size: 35px;
 }
 
 .hidden {
@@ -33,6 +35,46 @@ body {
 .sidebar-desktop {
     display: none;
     
+}
+
+.header-container {
+    background-color: black
+    background-size: cover;
+    background-image: url("background-for-header.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+}
+
+.header-background {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    width: 100%;
+    margin: -5px 0px 0px 0px;
+    padding: 60px;
+    height: auto;
+    text-align: left;
+}
+
+.header-background h2 {
+    font-size: 75px;
+    margin-bottom: 20px;
+}
+
+.header-background p {
+    font-size: 23px;
+    margin: 14px 0px 14px 0px;
+}
+
+.contact-button {
+    display: inline-block;
+    font-size: 21px;
+    background-color: rgb(255, 255, 255);
+    padding: 16px;
+    text-transform: uppercase;
+}
+
+.contact-button a {
+    color: #111;
 }
 
 .flex-container {
@@ -64,12 +106,12 @@ ul {
 .navbar {
     list-style-type: none;
     padding: 0;
-    background-color: #111;
+    background-color: rgb(255, 255, 255);
 }
 
 .navbar a {
-    font-size: 35px;
-    color: white;
+    font-size: 25px;
+    color: black;
     padding: 8px;
     align-content: center;
     display: inline-block;
@@ -148,6 +190,8 @@ ul {
     cursor: pointer;
 }
 
+
+
 /* 100% Image Width on Smaller Screens*/
 @media only screen and (max-width: 600px) {
     .modal-content {
@@ -165,16 +209,15 @@ form {
 }
 
 textarea {
-    padding: 5px;
-    box-shadow: 2px 2px 10px rgb(156, 156, 156);
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    border: none;
 }
 
 input {
-    padding: 5px;
     text-align: center;
-    box-shadow: 2px 2px 10px rgb(156, 156, 156);
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 7px;
+    margin: 5px;
 }
 
 .submit-button {
@@ -185,9 +228,6 @@ input {
     background-color: #111;
 }
 
-.submit-button:hover {
-    color: #00ff00;
-}
 
 p.center-text {
     padding: 25px;
@@ -195,6 +235,7 @@ p.center-text {
 
 label, input {
     display: inline-block;
+    font-size: 18px;
 }
 
 .contact-header {
@@ -207,19 +248,15 @@ label {
 }
 
 .submit-my-form {
-    background-color: rgb(0 189 25);
+    background-color: white;
     font-weight: bold;
+    font-size: 18px;
     margin-bottom: 25px;
     padding: 15px 32px;
     text-align: center;
-    color: white;
-    border: 1px rgba(0, 0, 0, 0.5);
+    color: #031305e6;
     box-shadow: none;
     cursor: pointer;
-}
-
-.submit-my-form:hover {
-    background-color: #006800;
 }
 
 
@@ -229,34 +266,25 @@ input.submit-form {
     margin-bottom: 25px;
     padding: 12px;
     color: white;
-    border: 1px rgba(0, 0, 0, 0.5);
     box-shadow: none;
 }
 
 input.submit-form:hover {
-    background-color: #006800;
+    background-color: #1eac31e6;
 }
 
 h3 {
+    font-family: 'Besley', serif;
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 15px;
     margin-top: 20px;
+    color: white;
 }
 
 .center-text {
     text-align: center;
 }
-
-.header-background {
-    background-size: cover;
-    background-image: url("background.pic-3.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 225px;
-    margin-top: -5px;
-}
-
 
 
 
@@ -267,23 +295,12 @@ ul {
 
 a {
     text-decoration: none;
-    color: rgb(0 189 25);
-}
 
-a:hover {
-    color: #00ff00;
 }
 
 img { 
     max-width: 100%;
     max-height: 100%;
-}
-
-h2 {
-    text-align: center;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    font-size: 37px;
 }
 
 .sidebar {
@@ -321,44 +338,68 @@ h2 {
     bottom: 30px;
     margin-left: 90%;
     margin-right: 20px;
-    background-color: rgb(0 189 25);
+    background-color: #111;
     border-radius: 25px;
 }
 
 .arrow-up:hover {
-    background-color: #00ff00;
+    background-color: rgb(17, 199, 0);
 }
 
 .contact-email {
-    background: rgb(14, 14, 14);
+    background: white;
     padding: 20px;
-    color: rgba(209, 209, 209, 0.774);
+    color: #111;
     text-align: left;
 }
 
 .contact-email h4 {
-    font-size: 20px;
+    font-size: 15px;
+    margin-bottom: 11px;
+}
+
+.navbar a:hover, .contact-email a:hover, .contact-button a:hover {
+    color: rgb(17, 199, 0);
 }
 
 .contact-email p {
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .contact-email a {
-    font-size: 16px;
-    background-color: rgba(255, 255, 255, 0.95);
-    color: rgb(0, 0, 0);
+    font-size: 14px;
+    background-color: #111;
+    color: white;
     padding: 15px 32px;
     display: inline-block;
     border: none;
 }
 
-.contact-email a:hover {
-    color: rgb(14, 14, 14);
-    background-color: rgba(209, 209, 209, 0.774);
+@media only screen and (max-width: 599px) {
+    /* For phones: */
+    .header-background h2, .header-background p {
+        text-align: center;
+    }
+
+    .contact-button {
+        display: block;
+        text-align: center;
+    }
+
+    .sidebar {
+        text-align: center;
+    }
+
+    .contact-email {
+        text-align: center;
+    }
+    
+    .header-background h2 {
+        font-size: 40px;
+    }
+
+
 }
-
-
 
 
 @media only screen and (min-width: 600px) {
@@ -371,14 +412,19 @@ h2 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sidebar-desktop {
+        flex-basis: 10%;
     }
 
     .flex-item {
-        width: 45%;
+        width: 46%;
     }
 
     .sidebar h2, .sidebar p {
-        text-align: left;
+        text-align: center;
     }
 
     .arrow-up {
@@ -393,20 +439,21 @@ h2 {
     }
 
     div.navbar li {
-        float: right;
+        float: left;
     }
 
     .navbar a {
-        font-size: 25px;
-        margin-right: 35px;
+        font-size: 22px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .navbar a:hover, .contact-email a:hover, .contact-button a:hover {
+        color: rgb(17, 199, 0);
     }
 
     .hidden {
         display: inline;
-    }
-
-    .header-background {
-        height: 158px;
     }
 
     .sidebar {
@@ -430,6 +477,8 @@ h2 {
         margin-left: 28px;
     }
 
+
+
 }
 
 @media  only screen and (min-width: 760px) {
@@ -442,6 +491,7 @@ h2 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        flex-basis: 75%;
     }
 
     .flex-item {
@@ -450,7 +500,7 @@ h2 {
 
     div.navbar li {
         overflow: hidden;
-        float: right;
+        float: left;
     }
 
     .sidebar {
@@ -462,23 +512,27 @@ h2 {
     }
 
     .sidebar-desktop {
-        flex-basis: 20%;
+        flex-basis: 15%;
         display: inline-block;
         box-sizing: border-box;
         text-align: left;
         color: white;
         background-color: #111;
-        padding: 30px;
-        margin: 15px;
+        padding: 10px;
+        height: auto;
+        margin: 19px 10px 10px 54px;
     }
 
     .sidebar-desktop h2 {
-        font-size: 3em;
+        font-size: 30px;
         margin: 5px;
+        color: white;
+        text-align: center;
     }
     
     .sidebar-desktop p {
-        font-size: 1.7em;
+        color: white;
+        font-size: 24px;
         margin: 10px;
     }
 
@@ -487,8 +541,8 @@ h2 {
         padding: 12px;
         margin: 25px;
         border-radius: 0 50% 0 50%;
-        box-shadow: 11px 10px 6px inset white;
-        background-color: #b4b4b4;  
+        box-shadow: 11px 10px 6px inset rgb(36, 36, 36);
+        background-color: #080808e6;  
     }
 
 }
