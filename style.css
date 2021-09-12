@@ -73,6 +73,10 @@ body {
     text-transform: uppercase;
 }
 
+form.contact-form {
+    padding: 20px;
+}
+
 .contact-button a {
     color: #111;
 }
@@ -211,6 +215,8 @@ form {
 textarea {
     padding: 0px;
     border: none;
+    width: 227px;
+    height: 100px;
 }
 
 input {
@@ -235,7 +241,11 @@ p.center-text {
 
 label, input {
     display: inline-block;
-    font-size: 18px;
+    font-size: 17px;
+}
+
+.form-background {
+    background-color: rgba(112, 112, 112, 0.938);
 }
 
 .contact-header {
@@ -250,11 +260,11 @@ label {
 .submit-my-form {
     background-color: white;
     font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 25px;
+    font-size: 16px;
+    margin-bottom: 5px;
     padding: 15px 32px;
     text-align: center;
-    color: #031305e6;
+    color: #111;
     box-shadow: none;
     cursor: pointer;
     border: none;
@@ -280,9 +290,8 @@ input.submit-form:hover {
 h3 {
     font-family: 'Besley', serif;
     text-align: center;
-    font-size: 45px;
-    margin-bottom: 15px;
-    margin-top: 20px;
+    font-size: 40px;
+    margin: 10px;  
     color: white;
 }
 
